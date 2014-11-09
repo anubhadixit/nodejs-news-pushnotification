@@ -20,3 +20,5 @@ Run the node script
 ```sh
 node newsAggregator.js
 ```
+
+Point your browser at: [**http://localhost:3000**](http://localhost:3000)
