@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="/socket.io/socket.io.js"></script>
+<title>Test</title>
+<script type="text/javascript">
+   var socket = io('http://localhost');
+   function onload() {
+	   socket.on('timer',function(data){
+	       document.getElementById("rootdiv").innerHTML = data;
+		   
+	   });
+   };
+   
+</script>
+</head>
+<body onload="onload()">
+<h1>BBC and SKY News Top 10 stories</h1>
+<div id="rootdiv">
+</div>
+</body>
+</html>
